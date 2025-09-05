@@ -3,6 +3,43 @@
   "version": "2.0.0",
   "tasks": [
     {
+  "label": "Simular Recorrido",
+  "type": "shell",
+  "command": "dotnet run --project ./Simulations/RouteSimulator.csproj",
+  "group": "none",
+  "problemMatcher": []
+}
+    {
+  "label": "Cargar Datos de Transporte",
+  "type": "shell",
+  "command": "dotnet run --project ./Backend/DataLoader.csproj",
+  "group": "none",
+  "problemMatcher": []
+}
+    {
+  "label": "Generar Reporte de Cobertura",
+  "type": "shell",
+  "command": "dotnet run --project ./Analytics/CoverageReport.csproj",
+  "group": "none",
+  "problemMatcher": []
+}
+    {
+  "label": "Validar Horarios",
+  "type": "shell",
+  "command": "dotnet run --project ./Backend/ScheduleValidator.csproj",
+  "group": "test",
+  "problemMatcher": []
+}
+
+    {
+  "label": "Visualizar Rutas",
+  "type": "shell",
+  "command": "npm run map:preview",
+  "group": "none",
+  "problemMatcher": []
+}
+    
+    {
       "type": "npm",
       "script": "start",
       "isBackground": true,
